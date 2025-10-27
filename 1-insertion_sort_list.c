@@ -1,11 +1,13 @@
 #include "sort.h"
 
 /**
- * swap_adjacent - Swap two adjacent nodes (left, right) in a doubly linked list
+ * swap_adjacent - Swap two adjacent nodes (left, right)
+ * in a doubly linked list
  * @list: Address of head pointer
  * @left: Left node (must be directly before right)
  * @right: Right node
  */
+
 static void swap_adjacent(listint_t **list, listint_t *left, listint_t *right)
 {
 	left->next = right->next;
